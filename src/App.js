@@ -72,7 +72,7 @@ function App() {
           type="text"
           placeholder="Search Images"
           value={query}
-          style={{ width: 300 }}
+          style={{ width: 300 ,margin:50}}
           onChange={(e) => setQuery(e.target.value)}
           className="form-control"
         />
