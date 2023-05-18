@@ -1,38 +1,25 @@
-.App {
-  text-align: center;
+
+.imgCard {
+  padding: 20px 0 0; /* 上邊距離 10px，其餘方向為 0 */
+  margin: 0px;
+  break-inside: avoid;
+
+}
+.ant-card {
+  background-color: transparent !important; /* 將背景色設置為透明 */
+  border: none !important; /* 移除邊框 */
+  box-shadow: none !important; /* 移除陰影效果 */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.imgBody{
+  width: 100%;
+  margin: 0px auto;
+  column-count: 3;
+  column-gap: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row{
+  
+  box-sizing: border-box;
+  
 }

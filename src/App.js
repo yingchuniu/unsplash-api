@@ -3,8 +3,8 @@ import "./App.css";
 import { Card, Button, Space } from "antd";
 
 const clientID = `?client_id=Hn6NZwP7VU47Xc1-kuNd99_QBoP_P4ZjZ7pIX4HtWi4`;
-const mainUrl = 'https://api.unsplash.com/photos';
-const searchUrl = 'https://api.unsplash.com/search/photos';
+const mainUrl = "https://api.unsplash.com/photos";
+const searchUrl = "https://api.unsplash.com/search/photos";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -72,7 +72,7 @@ function App() {
           type="text"
           placeholder="Search Images"
           value={query}
-          style={{ width: 300 ,margin:50}}
+          style={{ width: 300, margin: 50 }}
           onChange={(e) => setQuery(e.target.value)}
           className="form-control"
         />
@@ -80,20 +80,24 @@ function App() {
           Search
         </Button>
       </Space>
-      <div className="row">
-        {photos.map((image, index) => (
-          <div key={index} className="col-md-4">
-            <Card
-              cover={
-                <img
-                  src={image.urls.regular}
-                  alt="Image"
-                  style={{ height: "150px", objectFit: "cover" }}
-                />
-              }
-            />
-          </div>
-        ))}
+      <div className="imgBody">
+        <div className="row">
+          {photos.map((image, index) => (
+            <div key={index}>
+              <Card
+                className="imgCard"
+                cover={
+                  <img
+                    src={image.urls.regular}
+                    alt="Image"
+                    style={{ objectFit: "cover" ,borderRadius: 0}}
+                  />
+                }
+                bodyStyle={{ padding: 0 }}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
