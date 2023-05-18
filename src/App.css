@@ -12,7 +12,7 @@
 }
 
 .imgBody{
-  width: 100%;
+  width: 90%;
   margin: 0px auto;
   column-count: 3;
   column-gap: 50px;
@@ -22,4 +22,13 @@
   
   box-sizing: border-box;
   
+}
+
+@media screen and (max-width: 420px) {
+  .imgBody{
+    width: 90%;
+    margin: 0px auto;
+    column-count: 2;
+    column-gap: 50px;
+  }
 }
