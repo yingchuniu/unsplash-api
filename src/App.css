@@ -1,9 +1,7 @@
-
 .imgCard {
   padding: 20px 0 0; /* 上邊距離 10px，其餘方向為 0 */
   margin: 0px;
   break-inside: avoid;
-
 }
 .ant-card {
   background-color: transparent !important; /* 將背景色設置為透明 */
@@ -11,21 +9,19 @@
   box-shadow: none !important; /* 移除陰影效果 */
 }
 
-.imgBody{
+.imgBody {
   width: 90%;
   margin: 0px auto;
   column-count: 3;
   column-gap: 50px;
 }
 
-.row{
-  
+.row {
   box-sizing: border-box;
-  
 }
 
-@media screen and (max-width: 420px) {
-  .imgBody{
+@media screen and (max-width: 414px) {
+  .imgBody {
     width: 90%;
     margin: 0px auto;
     column-count: 2;
